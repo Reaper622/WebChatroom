@@ -1,16 +1,15 @@
 body{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: url('../image/background.jpg') no-repeat center center fixed;
     height: 920px;
-    scrollbar-base-color: #fff;  
-    scrollbar-base-color: #fff;  
-    scrollbar-3dlight-color: #fff;  
-    scrollbar-highlight-color: #fff;  
-    scrollbar-track-color: #fff;  
-    scrollbar-arrow-color: #fff;  
-    scrollbar-shadow-color: #fff;  
 }
 .content::before{
     content: "";
@@ -20,7 +19,8 @@ body{
     left: -100%;
     top: -100%;
     background:url('../image/background.jpg') no-repeat center center fixed;
-    filter: blur(10px);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
     z-index: -1;
 }
 .rgba{
@@ -29,6 +29,8 @@ body{
 }
 .content{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 1100px;
     height: 700px;
@@ -37,6 +39,8 @@ body{
     z-index: 2;
 }
 .leftList{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 400px;
     height: 700px;
@@ -79,6 +83,8 @@ body{
     width: 40px;
     height: 40px;
     margin: 20px 60px 20px 60px;
+    -webkit-transition: margin-left 1s linear;
+    -o-transition: margin-left 1s linear;
     transition: margin-left 1s linear
 }
 .icon-content{
@@ -89,6 +95,8 @@ body{
     right: 35px;
     color: white;
     opacity: 0;
+    -webkit-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
     transition: opacity 1s linear;
 }
 .icon-list-item:hover{
@@ -141,6 +149,8 @@ body{
 }
 .rightWindow{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 700px;
     height: 700px;
@@ -196,7 +206,8 @@ body{
     position: relative;
     width: 70%;
     height: 40px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     outline: none;
     margin-left: 30px;
     bottom: 7px;
