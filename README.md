@@ -18,7 +18,7 @@
 - 实现显示在线用户的功能
 
 ### 演示
-[![iPhDSg.md.gif](https://s1.ax1x.com/2018/09/08/iPhDSg.md.gif)](https://imgchr.com/i/iPhDSg)
+![iPhDSg.md.gif](https://s1.ax1x.com/2018/09/08/iPhDSg.md.gif)
 
 
 
@@ -31,4 +31,4 @@ git clone 仓库地址
 ```
 node server.js
 ```
-当提示server is running 时，访问[localhost:3000](localhost:3000/login.html)即可
+当提示server is running 时，访问[localhost:3000](http://localhost:3000/login.html)
