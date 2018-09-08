@@ -1,0 +1,306 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../image/background.jpg') no-repeat center center fixed;
+    height: 920px;
+    scrollbar-base-color: #fff;  
+    scrollbar-base-color: #fff;  
+    scrollbar-3dlight-color: #fff;  
+    scrollbar-highlight-color: #fff;  
+    scrollbar-track-color: #fff;  
+    scrollbar-arrow-color: #fff;  
+    scrollbar-shadow-color: #fff;  
+}
+.content::before{
+    content: "";
+    position: absolute;
+    width:300%;
+    height: 300%;
+    left: -100%;
+    top: -100%;
+    background:url('../image/background.jpg') no-repeat center center fixed;
+    filter: blur(10px);
+    z-index: -1;
+}
+.rgba{
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+.content{
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 2;
+}
+.leftList{
+    display: flex;
+    width: 400px;
+    height: 700px;
+    background:rgb(83, 152, 224,0.4);
+}
+.user-content{
+    position: relative;
+    width: 160px;
+    height: 100%;
+}
+.user-avatar{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    top: 30px; 
+}
+.user-username{
+    position: relative;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    margin-left: 20px;
+    top: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.user-content ul{
+    position: relative;
+    top: 250px;
+    list-style-type: none;
+    width: 160px;
+    padding: 0;
+}
+.icon-list-item{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 20px 60px 20px 60px;
+    transition: margin-left 1s linear
+}
+.icon-content{
+    z-index: 3;
+    position: relative;
+    float: right;
+    top: -50px;
+    right: 35px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+.icon-list-item:hover{
+    cursor: pointer;
+    margin-left:30px;
+}
+.memberList{
+    position: relative;
+    width: 240px;
+    height: 100%;
+    background: rgba(178, 211, 240, 0.4);
+}
+
+.peopleLink{
+    position: relative;
+    width: 240px;
+    height: 80px;
+    background: rgba(102, 163, 228, 0.479);
+}
+.peopleLink:hover{
+    cursor: pointer;
+    background: rgba(178, 211, 240, 0.4);
+}
+.avatar-in-link{
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+    border-radius: 30px;
+}
+.name-in-link{
+    position: relative;
+    display: inline-block;
+    line-height: 80px;
+    width: 100px;
+    height: 80px;
+    left: 20px;
+    font-size: 16px;
+    overflow: hidden;
+}
+.time-in-link{
+    position: relative;
+    line-height: 80px;
+    width: auto;
+    height: 80px;
+    float: right;
+    right: 20px;
+}
+.rightWindow{
+    position: relative;
+    display: flex;
+    width: 700px;
+    height: 700px;
+    background: rgb(255, 255, 255,0.3);
+    overflow: hidden;
+}
+.topBar{
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid slategray;
+    height: 60px;
+    background: rgb(255, 255, 255,0.4);
+}
+.contactName{
+    position: relative;
+    line-height: 60px;
+    font-size: 20px;
+    color: #333333;
+    left: 30px;
+}
+.contactTime{
+    position: relative;
+    float: right;
+    right: 30px;
+    font-size: 14px;
+    color: darkgrey;
+    line-height: 60px;
+}
+.chatWindow{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 580px;
+    overflow-y:auto;
+}
+.bottomBar{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: rgba(187, 194, 201, 0.7);
+}
+.smile{
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#sendContent{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    margin-left: 30px;
+    bottom: 7px;
+    border-radius: 10px;
+    border: 1px solid rgba(190, 180, 180, 0.924);
+    line-height: 40px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.send{
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+/* 消息样式 */
+.myMessageBox{
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin: 10px 0 10px 0;
+}
+.myMessageContent{
+    position: relative;
+    display: block;
+    float: right;
+    height: 80px;
+    width: auto;
+}
+.myMessageText{
+    position: relative;
+    top: 30px;
+    background: greenyellow;
+    display: inline-block;
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    width: auto;
+    line-height: 30px;
+    height: auto;
+    padding:  0px 10px 0px 10px;
+    border-radius: 5px; 
+    max-width: 400px;
+    word-wrap: break-word;
+}
+.myMessageName{
+    position: absolute;
+    right: 80px;
+    display: block;
+    height: 20px;
+    width: auto;
+    color: rgb(255, 255, 255);
+}
+.myMessageAvatar{
+    float: right;
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 10px 20px;
+    border-radius: 30px;
+}
+.otherMessageBox{
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin: 10px 0 10px 0;
+}
+.otherMessageContent{
+    position: relative;
+    display: block;
+    float: left;
+    height: 80px;
+    width: auto;
+}
+.otherMessageText{
+    position: relative;
+    top: 30px;
+    background: rgb(231, 226, 226);
+    display: inline-block;
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    width: auto;
+    line-height: 30px;
+    height: auto;
+    padding:  0px 10px 0px 10px;
+    border-radius: 5px; 
+    max-width: 400px;
+    word-wrap: break-word;
+}
+.otherMessageName{
+    position: absolute;
+    left: 80px;
+    display: block;
+    height: 20px;
+    width: auto;
+    color: rgb(255, 255, 255);
+}
+.otherMessageAvatar{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 10px 20px;
+    border-radius: 30px;
+}

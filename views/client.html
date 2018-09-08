@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../public/image/Reaper.png" type="image/x-icon">
+    <title>Talk to Reapers</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="rgba"></div>
+        <div class="content">
+            <div class="leftList">
+                <div class="user-content">
+                    <img src="../public/image/avatar.JPG" class="user-avatar">
+                    <p class="user-username"></p>
+                    <ul>
+                        <li><img src="../public/image/icon/github.png" class="icon-list-item"><span class="icon-content">源码</span></li>
+                        <li><img src="../public/image/icon/i.png" class="icon-list-item"><span class="icon-content">关于</span></li>
+                        <li><img src="../public/image/icon/人民币.png" class="icon-list-item"><span class="icon-content">赞助</span></li>
+                        <li><img src="../public/image/icon/delete.png" class="icon-list-item"><span class="icon-content">注销</span></li>
+                    </ul>
+                </div>
+                <div class="memberList">
+                    <div class="peopleLink">
+                        <img src="../public/image/avatar.JPG" class="avatar-in-link" >
+                        <span class="name-in-link">Reaper</span>
+                        <span class="time-in-link"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="rightWindow">
+                <div class="topBar">
+                    <span class="contactName">Reaper的聊天室</span>
+                    <span class="contactTime"></span>
+                </div>
+                <div class="chatWindow">
+            
+                </div>
+                <div class="bottomBar">
+                    <img src="../public/image/icon/smile.png" class="smile" id="smile">
+                    <input type="text" id="sendContent" maxlength="100">
+                    <img src="../public/image/icon/send.png" class="send" id="send">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/client.js"></script>
+</body>
+</html>
